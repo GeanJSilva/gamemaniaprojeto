@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-GameMania</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="topo">
+            
+            <!--imagem da logomarca-->
+            
+            <a href="index.html">
+                <img src="imagens/logomarca.png " alt="logo gamemania" class="logo">
+            </a>
+            
+            
+            <!--Barra de pesquisa-->
+            <form action="#" class="botaobusca">
+                <input type="text" placeholder="O que voçê está procurando hoje?" nome="procurar">
+                <button class="botao1" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <!--Icones redes sociais-->
+            
+            <div class="redesocial-container">
+                <div><a href="https://facebook.com.br" class="fa fa-facebook"></a></div>
+                <div><a href="https://twitter.com.br" class="fa fa-twitter"></a></div>
+                <div><a href="https://instagram.com.br" class="fa fa-instagram"></a></div>
+                
+            <!--Icones de campo do usuario-->
+            
+                <div><a href="login.html" class="fa fa-user-circle-o"></a></div>
+                <div><a href="favoritos.html" class="fa fa-heart"></a></div>
+                <div><a href="carrinho.html" class="fa fa-shopping-cart"></a></div>
+            </div>
+        
+        </div>
+        
+        <!-- Barra de menu-->
+        
+        <div class="grid-container">
+            <div><a href="hardwares.html">HARDWARES</a></div> 
+            <div><a href="perifericos.html">PERIFÉRICOS</a> </div>
+            <div><a href="computadores.html">COMPUTADORES</a> </div>
+            <div><a href="monitores.html">MONITORES</a></div>
+        </div>
+    </header>
+
+
+    <main>
+        
+        <!--carrossel de slides-->
+
+        <div class="index-container">
+            <div class="index-slides index-formas"><img src="imagens/banner/imagem nerd2.jpeg" style="width:100%"></div>
+            <div class="index-slides index-formas"><img src="imagens/banner/pc10.jpg" style="width:100%"></div>
+            <div class="index-slides index-formas"><img src="imagens/banner/pc12.jpg" style="width:100%"></div>
+            <div class="index-slides index-formas"><img src="imagens/banner/pc13.jpg" style="width:100%"></div>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="index-ponto"></span>
+            <span class="index-ponto"></span>
+            <span class="index-ponto"></span>
+            <span class="index-ponto"></span> 
+        </div>
+    
+    <br><br><br><br><br><br>fddfbr
+    <br><br>dg
+    <br><br>dgd
+
+    
+    </main>
+        
+        <!--rodapé-->
+        <footer class="rodape">
+                
+            <div class="rodape-container">
+                <div class="rodape-1">
+                    <div><b><h3>Institucional</h3></b></div>
+                    <div><a href="#">-Quem somos</a></div>
+                    <div><a href="#">-Lojas Físicas</a></div>            
+                </div>
+                <div class="rodape-1">
+                    <div><b><h3>SAC</b></h3></div>
+                    <div><a href="#">-Fale Conosco</a></div>
+                    <div></div>            
+                </div>
+                <div>
+                    <div><b><h3>GAME MANIA ltda, cnpj 01.101.011/01</h3></b></div>
+                </div>     
+            </div>
+        </footer>
+
+
+    <!-- javascript-->
+    <script>
+        let slideIndex = 1;
+        showSlides();
+        
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("index-slides");
+            let dots = document.getElementsByClassName("index-ponto");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+        </script>
+    </body>
+    </html>
