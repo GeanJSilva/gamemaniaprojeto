@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login-GameMania</title>
+    <title>Login - GameMania</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
 </head>
 <body>
     <header>
@@ -51,30 +56,69 @@
         </div>
     </header>
 
-        <!--Conteudo da pagina-->
-    <main>
+    <!--TELA DE LOGIN-->
 
+    <main>   
     
+        <div class="container">
+            <form action="#" method="post" class="login-form">            
+                                <!--Imagem do login-->
+                                <div class="login-imagem">
+                                    <img src="imagens/Nova Imagem.png" alt="logo2" class="logo2">
+                                </div>
+                            
+                                <!--formulario de login-->
+                                <div class="login-container">
+                                    <label for="login-usuario"><b> Endereço de E-mail</b></label>
+                                    <input type="email" name="login-usuario" required>
+                            
+                                    <label for="login-senha"><b>Senha</b></label>
+                                    <input type="password" name="login-senha" required>
+                            
+                                    <button class="button2" type="submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Lembrar Sempre
+                                    </label>
+                                </div>
+                            
+                                <div class="login-container2">
+                                    <span class="login-naocadastrado">Ainda não cadastrado? <a href="#">Clique aqui</a></span>
+                                    <span class="login-senha">Esqueceu A senha? <a href="#">Clique aqui</a></span>
+                                </div>
+                </form>
+
+
+            
+
+            </div>
+        
+        </div>
+
     </main>
         
-        <!--rodapé-->
-        <footer class="rodape">
+
+
+    
+    <!--rodapé-->
+    <footer class="rodape">
                 
-            <div class="rodape-container">
-                <div class="rodape-1">
-                    <div><b><h3>Institucional</h3></b></div>
-                    <div><a href="#">-Quem somos</a></div>
-                    <div><a href="#">-Lojas Físicas</a></div>            
-                </div>
-                <div class="rodape-1">
-                    <div><b><h3>SAC</b></h3></div>
-                    <div><a href="#">-Fale Conosco</a></div>
-                    <div></div>            
-                </div>
-                <div>
-                    <div><b><h3>GAME MANIA ltda, cnpj 01.101.011/01</h3></b></div>
-                </div>     
+        <div class="rodape-container">
+            <div>
+                <div><b><h3>Institucional</h3></b></div>
+                <div><a href="#">-Quem somos</a></div>
+                <div><a href="#">-Lojas Físicas</a></div>            
             </div>
-        </footer>
-    </body>
-    </html>
+            <div>
+                <div><b><h3>SAC</b></h3></div>
+                <div><a href="#">-Fale Conosco</a></div>
+                <div></div>            
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+                <div><b><h3>GAME MANIA ltda, cnpj 01.101.011/01</h3></b></div>
+            </div>     
+        </div>
+    </footer>
+</body>
+</html>

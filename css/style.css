@@ -18,7 +18,7 @@ header{
 /* BARRA DE BUSCA*/
 form.botaobusca{
     margin: 8% 20% 5% 20%;
-    max-width: 500px;
+    max-width: 45%;
     display: flex;
     align-items: center;
     max-height: 80px;
@@ -116,16 +116,6 @@ a:link {
     font-size: 20px;
 }
 
-/*LOGIN*/
-input[type=text], input[type=password]{
-
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #15a793;
-    box-sizing: border-box;
-}
 .button2{
     background-color: #15a793;
     color: white;
@@ -137,20 +127,6 @@ input[type=text], input[type=password]{
 }
 button :hover{
     opacity: 0.8;
-}
-.login-imagem{
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-.login-container {
-    padding: 16px;
-}
-span.login-senha{
-    display: block;
-    float: none;
-}
-.login-form{
-    margin: 0 20% 0 20%;
 }
 
 /*CORPO*/
@@ -173,14 +149,13 @@ body{
     position: relative;
     background-color: grey;
     bottom: 0;
-    width: 98%;
+    width: 100%;
 }
 
 
 .rodape-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    
+    grid-template-columns: auto auto auto auto auto;
     background-color: gray;
     padding: 5px 30px 10px;
     justify-content: space-between;
@@ -191,7 +166,7 @@ body{
 /*----------------------fim do cabeçalho, corpo e rodape----------------------*/
 
 
-/* PAGINA INDEX*/
+/*----------------------------- PAGINA INDEX----------------------------------*/
 
 /* Slide Carrossel*/
 
@@ -240,7 +215,90 @@ img {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+
+/*--------------------------------TELA DE LOGIN----------------------*/
+
+/*LOGIN*/
+input[type=email], input[type=password]{
+
+    width: 100%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #15a793;
+    box-sizing: border-box;
 }
+
+.login-imagem{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.login-container {
+    padding: 16px;
+}
+
+.login-container2 {
+    display:grid;
+    align-content: center;
+    grid-template-columns: auto auto;
+    padding: 16px;
+}
+
+span.login-senha{
+    display: block;
+    float: none;
+}
+
+.login-form{
+    margin: 0 20% 0 20%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------CONDICIONAIS PARA MUDANÇA DE TAMANHO DE TELA-----------------*/
+
+@media screen and (max-width: 1200px) {
+    .text {
+        font-size: 11px
+    }
+    
+    .topo{
+        display:flex
+        ;  
+    }    
+
+    header{
+        background-color: blue;
+        width: 100%;
+    
+    }
+    form.botaobusca{
+        margin: 8% 20% 5% 20%;
+        max-width: 300px;
+        display: flex;
+        align-items: center;
+        max-height: 50px;
+
+}
+
+form.botaobusca input[type=text]{
+    padding:10px;
+    font-size: 17px;
+    border: 3px solid #15a793;
+    float: left;
+    width: 300px;
+    background: white;
+    border-radius: 20px 020 0 20px;
+    height: 80px;
+}
+}
+
+

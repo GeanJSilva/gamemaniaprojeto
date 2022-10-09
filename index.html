@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login-GameMania</title>
+    <title>GameMania</title>
+    <script type="text/javascript" src="js/jquery-v3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
 </head>
 <body>
     <header>
@@ -51,10 +56,8 @@
         </div>
     </header>
 
-
-    <main>
-        
-        <!--carrossel de slides-->
+    <!--carrossel de slides-->
+    <main> 
 
         <div class="index-container">
             <div class="index-slides index-formas"><img src="imagens/banner/imagem nerd2.jpeg" style="width:100%"></div>
@@ -70,56 +73,28 @@
             <span class="index-ponto"></span>
             <span class="index-ponto"></span> 
         </div>
-    
-    <br><br><br><br><br><br>fddfbr
-    <br><br>dg
-    <br><br>dgd
-
-    
     </main>
         
-        <!--rodapé-->
-        <footer class="rodape">
+    <!--rodapé-->
+    <footer class="rodape">
                 
-            <div class="rodape-container">
-                <div class="rodape-1">
-                    <div><b><h3>Institucional</h3></b></div>
-                    <div><a href="#">-Quem somos</a></div>
-                    <div><a href="#">-Lojas Físicas</a></div>            
-                </div>
-                <div class="rodape-1">
-                    <div><b><h3>SAC</b></h3></div>
-                    <div><a href="#">-Fale Conosco</a></div>
-                    <div></div>            
-                </div>
-                <div>
-                    <div><b><h3>GAME MANIA ltda, cnpj 01.101.011/01</h3></b></div>
-                </div>     
+        <div class="rodape-container">
+            <div>
+                <div><b><h3>Institucional</h3></b></div>
+                <div><a href="#">-Quem somos</a></div>
+                <div><a href="#">-Lojas Físicas</a></div>            
             </div>
-        </footer>
-
-
-    <!-- javascript-->
-    <script>
-        let slideIndex = 1;
-        showSlides();
-        
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("index-slides");
-            let dots = document.getElementsByClassName("index-ponto");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 3000); // Change image every 2 seconds
-        }
-        </script>
-    </body>
-    </html>
+            <div>
+                <div><b><h3>SAC</b></h3></div>
+                <div><a href="#">-Fale Conosco</a></div>
+                <div></div>            
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+                <div><b><h3>GAME MANIA ltda, cnpj 01.101.011/01</h3></b></div>
+            </div>     
+        </div>
+    </footer>
+</body>
+</html>
